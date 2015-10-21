@@ -1,12 +1,24 @@
 #navbar{
+    font-size:20px;
     text-align:center;
 }
 
 #navbar li{
+    color:white;
+    transition: 0.5s linear;
     display:inline-block;
-    border: 2px solid black;
+    border: 2px solid white;
 }
 
 #navbar a{
 
+}
+
+
+
+#navbar li:hover{
+    color:gray;
+    font-size:27px;
+    background-color:red;
+    
 }

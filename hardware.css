@@ -1,0 +1,30 @@
+body{
+    background-color:gray;
+}
+li {
+    text-align:center;
+    border:solid black 2px;
+}
+h1 {
+    border-top:double;
+    text-align:center;
+    border-bottom:double;
+    margin-left:250px;
+    margin-right:250px;
+}
+h2{
+    margin-left:150px;
+    margin-right:150px;
+    border-top:solid;
+    border-bottom:solid;
+}
+
+
+a {
+  background-color:gray;  
+}
+.hardwarep{    
+    color:black;
+    margin-left:150px;
+    margin-right:150px;
+}

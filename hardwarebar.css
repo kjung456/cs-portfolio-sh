@@ -1,0 +1,28 @@
+#hardwarebar{
+    font-size:20px;
+    text-align:center;
+}
+
+#hardwarebar li{
+    color:black;
+    transition: 0.5s linear;
+    display:inline-block;
+    border: 2px solid black;
+}
+
+#hardwarebar a{
+    color:red;
+
+}
+
+#hardwarebar a:hover{
+    background-color:white;
+    
+}
+
+#hardwarebar li:hover{
+    color:white;
+    font-size:27px;
+    background-color:white;
+    
+}

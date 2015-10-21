@@ -1,7 +1,64 @@
 .paragraphs{
-    width:70%;
+    color:white;
+}
+body{
+    border:solid;
+    margin-left:150px;
+    margin-right:150px;
+    background-color:black;
+}
+.images2{
+    margin-left:100px;
+}
+
+
+.images{
+        margin-left:275px;
+        border-color:white;
+        border:solid;
+        border-width:3px;
+      }
+      .paragraphs:hover{
+        font-size:120%;  
+        color:red;
+      }
+      
+      a {
+        color:white;
+        
+      }
+
+    h1{
+        margin-left:150px;
+        margin-right:150px;
+        text-align:center;
+        font-size:50px;
+        display:inline-x:;block;
+        
+    }
+        .paragraphs{
+            transition:0.5s linear;
+            font-size:110%;
+            font-family:"arial";
+            border-style:dotted;
+            border-width:3px;
     color:white;
 }
 body{
     background-color:black;
+}
+h1{
+    font-size:50px;
+    color:white;
+    border-color:white;
+    border-top:double;
+    border-bottom:double;
+}
+
+h2 {
+    font-size:35px;
+    color:white;
+    border-color:white;
+    border-top:solid;
+    border-bottom:solid;
 }
