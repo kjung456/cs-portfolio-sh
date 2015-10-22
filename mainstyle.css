@@ -1,4 +1,5 @@
 .paragraphs{
+    font-size:10px;
     color:white;
 }
 body{
@@ -7,19 +8,8 @@ body{
     margin-right:150px;
     background-color:black;
 }
-.images2{
-    margin-left:100px;
-}
-
-
-.images{
-        margin-left:275px;
-        border-color:white;
-        border:solid;
-        border-width:3px;
-      }
       .paragraphs:hover{
-        font-size:120%;  
+        font-size:20px;  
         color:red;
       }
       
@@ -29,6 +19,11 @@ body{
       }
 
     h1{
+            font-size:50px;
+    color:white;
+    border-color:white;
+    border-top:double;
+    border-bottom:double;
         margin-left:150px;
         margin-right:150px;
         text-align:center;
@@ -37,8 +32,8 @@ body{
         
     }
         .paragraphs{
-            transition:0.5s linear;
-            font-size:110%;
+            transition:0.3s linear;
+            font-size:120%;
             font-family:"arial";
             border-style:dotted;
             border-width:3px;
@@ -47,14 +42,6 @@ body{
 body{
     background-color:black;
 }
-h1{
-    font-size:50px;
-    color:white;
-    border-color:white;
-    border-top:double;
-    border-bottom:double;
-}
-
 h2 {
     font-size:35px;
     color:white;
