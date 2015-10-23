@@ -28,3 +28,9 @@ a {
     margin-left:150px;
     margin-right:150px;
 }
+.hardware-image{
+    border:3px dashed black;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}

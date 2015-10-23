@@ -49,3 +49,10 @@ h2 {
     border-top:solid;
     border-bottom:solid;
 }
+h3{
+    font-size:31px;
+    color:white;
+    border-color:white;
+    border-top:dashed;
+    border-bottom:dashed;
+}
