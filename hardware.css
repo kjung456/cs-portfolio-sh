@@ -26,9 +26,15 @@ a {
   background-color:gray;  
 }
 .hardwarep{
+    font-size:17px;
     color:black;
     margin-left:150px;
     margin-right:150px;
+}
+.hardwarep:hover{
+    font-size:20px;
+    color:red;
+    
 }
 .hardware-image{
     border:3px dashed black;
@@ -43,6 +49,8 @@ a {
     border-color:red;
 }
 .link{
+    margin-left:300px;
+    display:flex;
     border-style:solid;
     border-color:black;
     font-size:20px;
