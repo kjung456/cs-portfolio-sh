@@ -1,0 +1,23 @@
+ #dropdown {
+     color:red; 
+ }
+ body {
+  background-color:gray;
+  text-align:center;
+ }
+ #display {
+  font-size:45px;
+ }
+ 
+ p{
+  font-size:50px;
+  border:solid;
+  border-color:black;
+  margin-left:500px ;
+  margin-right:500px ;
+ }
+ h1 {
+  border-bottom:solid;
+  margin-right:500px;
+  margin-left:500px;
+ }

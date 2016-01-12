@@ -1,0 +1,24 @@
+body{
+    color:white;
+    background-color:maroon;
+}
+h1 {
+    font-size:50px;
+    margin-right:350px;
+    margin-left:350px;
+    border-top:dotted;
+    border-bottom:dotted;
+    text-align:center;
+}
+.Info-image{
+    margin-left:35px;
+    margin-right:3px;
+    border:5px solid;
+    border-color:black;
+}
+.Info-image:hover{
+    border-color:white;
+    height:280px;
+    width:280px;
+}
+
