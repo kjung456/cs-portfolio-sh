@@ -18,7 +18,53 @@ h1 {
 }
 .Info-image:hover{
     border-color:white;
-    height:280px;
-    width:280px;
+    height:230px;
+    width:230px;
+}
+#item2{
+    position: relative;
+    bottom: 332px;
+    left: 300px;
+}
+#item3{
+    position: relative;
+    bottom: 663px;
+    left: 600px;
+}
+#item4{
+    position:relative;
+    bottom: 993px;
+    left: 900px;
+}
+#info1{
+    position: relative;
+    bottom: 975px;
+    color: white;
+    font-family: serif;
+    border-bottom: solid;
+    font-size:50px;
+}
+#info2{
+    font-size:25px;
+    position: relative;
+    bottom: 960px;
+}
+#navbar {
+    text-align: center;
+}
+#navbar a {
+    color:white;
+}
+#navbar li{
+    background-color: maroon;
+    font-size:20px;
+    transition: 0.3s linear;
+    display:inline-block;
+    border: 3px solid white;
+}
+#navbar li:hover{
+    color:blue;
+    background-color: gray;
+    font-size:30px;
 }
 
