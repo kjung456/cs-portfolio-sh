@@ -129,13 +129,13 @@ bot.runGame();
         </code>
         <h2>Bot Functions</h2>
             <h3>Going to Taverns: Health</h3>
-            <p>This is my code I use for my bot to go to taverns. </p>
+            <p>This is my code I use for my bot to go to taverns. The taverns are used to help your character gain health they have lost from being attacked by other players. My code for my bot tells the bot to go to the closest tavern to it. It will only go to a tavern if its health if it is equal to or less than 50. </p>
             <pre>
             <code>
             var task;
         if(bot.yourBot.life<=50 ){
             task = "taverns"
-        }
+            }
            if(task === "taverns") {
             var closestTavern = bot.taverns[0];
             for(i = 0; i < bot.taverns.length; i++){
@@ -145,9 +145,47 @@ bot.runGame();
             }
             console.log("taverns");
             myDir = bot.findPath(myPos, closestTavern);
-        }
+            }
             </code>    
             </pre>  
+            <p>The jug in each corner of the map, is a tavern. This is what they look like.</p>
+            <img src=http://stratosprovatopoulos.com/wp-content/uploads/2014/02/screenshot.png>
+            <h3>Going to Free Mines: Gold</h3>
+            <p>This is the code I use to tell my bot to go to a mine. Mines enable the bots to gain gold because it is the source of the gold. This code allows my bot to find the closest free mine and collect gold. The code also tell my bot when to go to a mine for gold. For example, when my bot's health is more than 55, it will go to a mine to get gold.</p>
+            <pre>
+            <code>
+                else if(bot.yourBot.life>=55){
+                task = "freemines"
+                } 
+                        if(task === "freemines") {
+            var closestMine = bot.freeMines[0];
+            for(i = 0; i < bot.freeMines.length; i++) {
+                if(bot.findDistance(myPos, closestMine) > bot.findDistance(myPos, bot.freeMines[i])) {
+                    closestMine = bot.freeMines[i];
+                }
+            }
+            console.log("Claiming a Free Mine!");
+            myDir = bot.findPath(myPos, closestMine);
+            }
+            </code>
+            </pre>
+            <p>In the middle of this picture, you can see there is a mine. This is the icon that is used to indicate that it is a mine.</p>
+            <img src=http://stratosprovatopoulos.com/wp-content/uploads/2014/02/Vindinium.jpg>
+            <h3>Attacking Other players: Attack</h3>
+            <p>My code for attacking other players is what I have below. This code allows me to attack the nearest enemy bot and attack them. This causes them to lose their health and some gold.</p>
+            <pre>
+            <code>
+                 else{
+            task = "attack"
+            }
+             if(task === "attack") {
+            console.log("Attacking nearest bot!");
+            myDir = bot.findPath(myPos, [closestBot.pos.x,closest.Bot.pos.y]);
+            }
+            </code>
+            </pre>
+            <p>As you can see in this picture, the yellow player is attacking the green player. This is what the code above allows the bot to do.</p>
+            <img src=https://s3.amazonaws.com/poly-screenshots.angel.co/Project/a0/120663/73d89cbf74dde0cacf22233ec6dc6a79-original.png>
 
         
         
