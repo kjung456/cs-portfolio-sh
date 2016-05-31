@@ -1,15 +1,24 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="vidinium.css" type="text/css">
         <title>Vindinium Bots </title>
     </head>
     <body>
-        <h1>Vindinium Bots</h1>
+           <ul id="navbar">
+            <li> <a href="index.html">Home</a></li>
+            <li> <a href="hardware.html"> Hardware</a> </li>
+            <li> <a href="InfoWebsite.html">Musicians </a></li>
+            <li> <a href="calc.html">Calculator </a></li>
+            <li> <a href="vidinium.html"> Vidinium</a></li>
+            </ul>
+        <strong><h1>Vindinium Bots</h1></strong>
         <h2>What is Vindinium?</h2>
         <p>Vindinium is a program where users have their own unique bots. This game is a self moving game, meaning that the computer makes its own moves. This is why the user has to program their own bot to do specific actions. In the game, the objective is to get the most amount of gold. Players have to program their bots to do certain tasks such as attack other bots, go to taverns for health, or go to mines for gold. There is a total of four players in each game. The players then compete against each other to get the most gold and steal from other players.</p>
         <img src=http://i.imgur.com/8NlAaFv.png>
         <h2>Bot Coding</h2>
         <p> This is my overview of my code for my bot.</p>
+        <class="code">
         <pre>
         <code>
         var Bot = require('bot');
@@ -126,11 +135,12 @@ Bot.prototype.botBrain = function() {
 }
 bot.runGame();
         </pre>    
-        </code>
+        </code></class>
         <h2>Bot Functions</h2>
             <h3>Going to Taverns: Health</h3>
-            <p>This is my code I use for my bot to go to taverns. The taverns are used to help your character gain health they have lost from being attacked by other players. My code for my bot tells the bot to go to the closest tavern to it. It will only go to a tavern if its health if it is equal to or less than 50. </p>
-            <pre>
+            <p>This is my code I use for my bot to go to taverns. The taverns are used to help your character gain health they have lost from being attacked by other players. My code for my bot tells the bot to go to the closest tavern to it. It will only go to a tavern if its health if it is equal to or less than 50.</p>
+             <class="code">
+             <pre>
             <code>
             var task;
         if(bot.yourBot.life<=50 ){
@@ -147,12 +157,12 @@ bot.runGame();
             myDir = bot.findPath(myPos, closestTavern);
             }
             </code>    
-            </pre>  
-            <p>The jug in each corner of the map, is a tavern. This is what they look like.</p>
-            <img src=http://stratosprovatopoulos.com/wp-content/uploads/2014/02/screenshot.png>
+            </pre></class>
+            <p>The jug in each corner of the map, is a tavern. This is what they look like.           <img src=http://stratosprovatopoulos.com/wp-content/uploads/2014/02/screenshot.png></p>
             <h3>Going to Free Mines: Gold</h3>
             <p>This is the code I use to tell my bot to go to a mine. Mines enable the bots to gain gold because it is the source of the gold. This code allows my bot to find the closest free mine and collect gold. The code also tell my bot when to go to a mine for gold. For example, when my bot's health is more than 55, it will go to a mine to get gold.</p>
-            <pre>
+            <class="code">
+             <pre>
             <code>
                 else if(bot.yourBot.life>=55){
                 task = "freemines"
@@ -168,12 +178,12 @@ bot.runGame();
             myDir = bot.findPath(myPos, closestMine);
             }
             </code>
-            </pre>
-            <p>In the middle of this picture, you can see there is a mine. This is the icon that is used to indicate that it is a mine.</p>
-            <img src=http://stratosprovatopoulos.com/wp-content/uploads/2014/02/Vindinium.jpg>
+            </pre></class>
+            <p>In the middle of this picture, you can see there is a mine. This is the icon that is used to indicate that it is a mine.            <img src=http://stratosprovatopoulos.com/wp-content/uploads/2014/02/Vindinium.jpg></p>
             <h3>Attacking Other players: Attack</h3>
-            <p>My code for attacking other players is what I have below. This code allows me to attack the nearest enemy bot and attack them. This causes them to lose their health and some gold.</p>
-            <pre>
+            <p>My code for attacking other players is what I have below. This code allows me to attack the nearest enemy bot and attack them. This causes them to lose their health and some gold. </p>
+           <class="code">
+           <pre>
             <code>
                  else{
             task = "attack"
@@ -183,9 +193,9 @@ bot.runGame();
             myDir = bot.findPath(myPos, [closestBot.pos.x,closest.Bot.pos.y]);
             }
             </code>
-            </pre>
-            <p>As you can see in this picture, the yellow player is attacking the green player. This is what the code above allows the bot to do.</p>
-            <img src=https://s3.amazonaws.com/poly-screenshots.angel.co/Project/a0/120663/73d89cbf74dde0cacf22233ec6dc6a79-original.png>
+            </pre></class>
+            <p>As you can see in this picture, the yellow player is attacking the green player. This is what the code above allows the bot to do. <img src=https://s3.amazonaws.com/poly-screenshots.angel.co/Project/a0/120663/73d89cbf74dde0cacf22233ec6dc6a79-original.png></p>
+           
 
         
         
