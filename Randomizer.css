@@ -1,0 +1,55 @@
+body{
+    color:white;
+    background-color:blue;
+}
+h1{
+    margin-left: 175px;
+    margin-right: 175px;
+    border-bottom: solid 5px;
+    text-align:center;
+}
+h2{
+    margin-left: 175px;
+    margin-right: 175px;
+    border-bottom: solid 3px;
+    text-align:center;
+}
+p{
+    margin-left: 125px;
+    margin-right: 125px;
+    font-size: 25px;
+    border: solid;
+    text-align: center;
+}
+p1{
+    font-size: 20px;
+    border-bottom: solid;
+    margin-left: 380px;
+}
+#navbar{
+    text-align: center;
+}
+#navbar a {
+    border:solid;
+    color:white;
+}
+#navbar li {
+    font-size: 20px;
+    display: inline-block;
+}
+#navbar li:hover{
+    font-size:25px;
+}
+#amounts{
+    text-align: center;
+}
+#display{
+    margin-left: 100px;
+    margin-right: 100px;
+    border:dotted white;
+    font-size: 30px;
+    text-align: center;
+}
+#buttonpic{
+    text-align: center;
+}
