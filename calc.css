@@ -21,6 +21,17 @@
   margin-right:500px;
   margin-left:500px;
  }
- #navbar{
-  border:black 3px solid;
- }
+#navbar{
+    text-align: center;
+}
+#navbar a {
+    border:solid;
+    color:white;
+}
+#navbar li {
+    font-size: 20px;
+    display: inline-block;
+}
+#navbar li:hover{
+    font-size:25px;
+}

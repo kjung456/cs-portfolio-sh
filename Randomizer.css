@@ -40,7 +40,7 @@ p1{
 #navbar li:hover{
     font-size:25px;
 }
-#amounts{
+#dropdown{
     text-align: center;
 }
 #display{
@@ -50,6 +50,10 @@ p1{
     font-size: 30px;
     text-align: center;
 }
-#buttonpic{
-    text-align: center;
+#redButton{
+    margin-left: 130px;
+    display: inline-block;
+}
+#amounts{
+    text-align: center
 }
